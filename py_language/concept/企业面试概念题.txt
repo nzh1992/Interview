@@ -1,0 +1,21 @@
+1. python新式类和经典类的区别？
+    a. 凡是继承了object的类都是新式类
+    b. python3中只有新式类
+    c. python2中继承object的是新式类，没有写父类的是经典类
+    d. 经典类目前在python中基本没有应用
+    e. 保持class与type的统一对新式类的实例执行a.class与type(a)的结果是一致的，对于经典类不一定。
+    f. 对于多重继承的属性的搜索顺序不一致，新式类采用广度优先，经典类采用深度优先。
+
+
+2. python内置的数据结构有几种？
+    a. 整型 int（python3中，无线精度）
+    b. 浮点型 float
+    c. 复数 complex
+    d. 字符串 str
+    e. 列表 list
+    f. 元祖 tuple
+    g. 字典 dict
+    h. 集合 set
+
+
+3.

@@ -1,0 +1,14 @@
+{"text":"This is the first sentence.","_input_hash":2083129218,"_task_hash":-536378640,"spans":[],"meta":{"score":0.5,"pattern":65},"answer":"accept","tokens":[
+{"text":"This","id":0},
+{"text":"is","id":1},
+{"text":"the","id":2},
+{"text":"first","id":3},
+{"text":"sentence","id":4},
+{"text":".","id":5}]}
+{"text":"This is the second sentence.","_input_hash":2083129218,"_task_hash":-536378640,"spans":[],"meta":{"score":0.5,"pattern":65},"answer":"accept","tokens":[
+{"text":"This","id":0},
+{"text":"is","id":1},
+{"text":"the","id":2},
+{"text":"second","id":3},
+{"text":"sentence","id":4},
+{"text":".","id":5}]}
