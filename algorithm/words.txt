@@ -1,0 +1,1 @@
+this is a good method for check file, make sure the file correct.
