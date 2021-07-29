@@ -1,0 +1,58 @@
+python语言相关特性
+
+
+一、什么是鸭子类型（Duck Typing）？
+"当看到一只鸟走起来像样子、游泳起来像鸭子、叫起来像鸭子，那么这只鸟就可以被称为鸭子"。
+鸭子类型指的是不同类型的对象拥有相同的方法，关注点在对象的行为，而不是类型。
+比如python中的File、StringIO、socket对象都支持read、write方法（File like object），他们就是鸭子类型。
+再比如定义了__iter__方法的对象都可迭代对象，都可以用for进行迭代。
+
+
+二、什么是猴子补丁（Monkey patch）？
+本质上来看，所谓的monkey patch就是运行时替换对象或者更改属性。
+比如，我想定向更改time.time()方法的结果，只需要重新创建一个函数，将所需要的功能添加到函数中，再对time.time进行赋值即可更改。
+
+
+三、什么是自省(Introspection)？
+在程序运行的时候判断一个对象的类型的能力，称为自省。
+在程序中我们可以通过type，id，isinstance这样的函数来判定对象的类型。
+
+
+四、什么是列表推导式（List Comprehension）？
+是python提供的语法糖，通过在中扩号中放置for循环的方式快速生成列表。
+它是用来替代map、filter等函数的。
+把中括号改为小括号，列表推导式就变成了生成器
+
+
+五、python之禅
+通过import this来查看python之禅。
+
+
+六、python2/3差异问题
+除法(/)不再是取整，取整可用(//)
+类型注解，type hint，帮助IDE实现类型检查
+super()方便直接调用父类函数
+解包
+限定关键字参数
+重新抛出异常不会丢失栈信息
+一切快捷函数都返回迭代器，比如range, zip, map, dict.values。
+yield from
+新增asyncio内置库，async, await原生协议支持异步
+新增内置库enum, mock, asyncio, ipaddress, concurrent.futures等
+生成后的pyc文件统一放到__pycache__目录中
+修改了一些内置库，比如urllib, selector等
+性能优化...
+
+
+七、如何编写2/2兼容的代码
+1. six模块
+2. 2to3工具，转换代码
+3. __future__，在python2中使用python3的特性
+
+
+
+
+
+
+
+
